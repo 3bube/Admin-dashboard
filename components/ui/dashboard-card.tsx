@@ -39,7 +39,7 @@ export function DashboardCard({
         <div className={cn("p-3 bg-blue-800 rounded-full mr-4 flex-shrink-0")}>
           <Image
             // eslint-disable-next-line @typescript-eslint/no-require-imports
-            src={require(iconSrc)}
+            src={require(iconSrc as string)}
             width={20}
             height={20}
             className="h-5 w-5"
