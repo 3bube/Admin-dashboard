@@ -24,7 +24,7 @@ export function DashboardCard({
   valueClassName,
   titleClassName,
   bgColor = "bg-[#062D81]",
-  iconSrc = "@/assets/images/sales.png",
+  iconSrc,
   iconAlt = "icon",
 }: DashboardCardProps) {
   return (
