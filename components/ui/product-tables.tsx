@@ -94,9 +94,7 @@ export function ProductTables({
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 flex items-center justify-center overflow-hidden">
                 <Image
-                  src={
-                    lowQuantityStock?.thumbnail ?? "/assets/images/snacks.png"
-                  }
+                  src={lowQuantityStock?.thumbnail}
                   alt={lowQuantityStock?.name || "Product image"}
                   width={40}
                   height={40}
