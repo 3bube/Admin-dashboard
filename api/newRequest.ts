@@ -13,8 +13,6 @@ const secondaryRequest = axios.create({
   baseURL: SECONDARY_API_URL,
 });
 
-console.log(process.env.NEXT_PUBLIC_SECONDARY_API_KEY);
-
 // Use environment variable for the API key
 secondaryRequest.interceptors.request.use((config) => {
   config.headers[
