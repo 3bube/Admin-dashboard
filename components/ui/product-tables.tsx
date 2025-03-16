@@ -16,6 +16,7 @@ export function ProductTables({
   lowQuantityStock: LowQuantityStock;
   isLoading?: boolean;
 }) {
+  console.log(lowQuantityStock);
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
       {/* Top Selling Products */}
@@ -93,7 +94,9 @@ export function ProductTables({
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 flex items-center justify-center overflow-hidden">
                 <Image
-                  src={lowQuantityStock?.thumbnail || "/assets/images/snacks.png"}
+                  src={
+                    lowQuantityStock?.thumbnail ?? "/assets/images/snacks.png"
+                  }
                   alt={lowQuantityStock?.name || "Product image"}
                   width={40}
                   height={40}
